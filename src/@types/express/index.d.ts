@@ -1,0 +1,8 @@
+import { type Request } from "express";
+import type User from "@/models/user.ts";
+
+declare module "express-serve-static-core" {
+	export interface Request {
+		user?: User;
+	}
+};

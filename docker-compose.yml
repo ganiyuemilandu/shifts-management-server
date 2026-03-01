@@ -1,0 +1,49 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: shifts-db
+    restart: always
+
+    ports:
+      - "${MYSQL_PORT}:3306"
+
+    environment:
+      - MYSQL_ROOT_PASSWORD
+      - MYSQL_DATABASE
+      - MYSQL_USER
+      - MYSQL_PASSWORD
+
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+
+  redis:
+    image: redis:8.0
+    container_name: shifts-redis
+    restart: always
+
+    ports:
+      - "6379:6379"
+
+    environment:
+      - REDIS_PASSWORD
+      
+    command: /bin/sh -c "redis-server --requirepass $${REDIS_PASSWORD}"
+
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli -a $REDIS_PASSWORD ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+
+volumes:
+  mysql-data:

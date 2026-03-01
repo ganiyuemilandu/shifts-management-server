@@ -1,0 +1,59 @@
+{
+  "name": "shifts-manager-server",
+  "version": "1.0.0",
+  "description": "Manages staff job shifts",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./dist/server.js",
+    "dev": "nodemon -e ts --watch 'src/**/*.ts' --exec node --import ./ts-node-bootstrap.js src/bin/launcher.ts",
+    "cli:reg": "node --import ./ts-node-bootstrap.js src/cli.ts register",
+    "cli:auth": "node --import ./ts-node-bootstrap.js src/cli.ts authenticate",
+    "cli:del": "node --import ./ts-node-bootstrap.js src/cli.ts delete",
+    "build": "tsc && tsc-alias",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganiyuemilandu/shifts-manager-server.git"
+  },
+  "author": "Ganiyu Emilandu <ganiyuemilandu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ganiyuemilandu/shifts-manager-server/issues"
+  },
+  "homepage": "https://github.com/ganiyuemilandu/shifts-manager-server#readme",
+  "dependencies": {
+    "@react-email/components": "1.0.8",
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.16.0",
+    "redis": "^5.10.0",
+    "resend": "^6.9.3",
+    "sequelize": "^6.37.7",
+    "yaml": "^2.8.1",
+    "zod": "^4.1.12",
+    "zod-to-json-schema": "^3.25.1"
+  },
+  "devDependencies": {
+    "@inquirer/prompts": "^8.2.0",
+    "@types/bcrypt": "^6.0.0",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.10.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "commander": "^14.0.2",
+    "nodemon": "^3.1.10",
+    "react-email": "5.2.9",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.16",
+    "typescript": "^5.9.3"
+  }
+}
