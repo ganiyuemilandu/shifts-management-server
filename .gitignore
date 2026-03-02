@@ -3,4 +3,5 @@ node_modules/
 .DS_Store
 dist/
 build/
+src/cli.ts
 npm-debug.log*
