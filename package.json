@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node ./dist/server.js",
+    "start": "node ./dist/bin/launcher.js",
     "dev": "nodemon -e ts --watch 'src/**/*.ts' --exec node --import ./ts-node-bootstrap.js src/bin/launcher.ts",
     "cli:reg": "node --import ./ts-node-bootstrap.js src/cli.ts register",
     "cli:auth": "node --import ./ts-node-bootstrap.js src/cli.ts authenticate",
