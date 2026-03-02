@@ -25,6 +25,14 @@
   "homepage": "https://github.com/ganiyuemilandu/shifts-manager-server#readme",
   "dependencies": {
     "@react-email/components": "1.0.8",
+    "@types/bcrypt": "^6.0.0",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.10.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
     "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
@@ -35,25 +43,17 @@
     "redis": "^5.10.0",
     "resend": "^6.9.3",
     "sequelize": "^6.37.7",
+    "tsc-alias": "^1.8.16",
+    "typescript": "^5.9.3",
     "yaml": "^2.8.1",
     "zod": "^4.1.12",
     "zod-to-json-schema": "^3.25.1"
   },
   "devDependencies": {
     "@inquirer/prompts": "^8.2.0",
-    "@types/bcrypt": "^6.0.0",
-    "@types/cookie-parser": "^1.4.10",
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.5",
-    "@types/jsonwebtoken": "^9.0.10",
-    "@types/node": "^24.10.0",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
     "commander": "^14.0.2",
     "nodemon": "^3.1.10",
     "react-email": "5.2.9",
-    "ts-node": "^10.9.2",
-    "tsc-alias": "^1.8.16",
-    "typescript": "^5.9.3"
+    "ts-node": "^10.9.2"
   }
 }
