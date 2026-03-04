@@ -21,7 +21,10 @@ app.set("port", port);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(cors({ origin: process.env["CLIENT_DOMAIN"], credentials: true }));
+app.use(cors({ origin: [
+	process.env["CLIENT_DOMAIN"]!,
+	process.env["CLIENT_DOMAIN"]!.replace("www.", ""),
+], credentials: true }));
 
 app.get("/", async (_req: Request, res: Response) => {
 	res.status(200).json({ message: "Hello, user!" });
