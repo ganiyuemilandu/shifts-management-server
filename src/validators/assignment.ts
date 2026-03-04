@@ -1,5 +1,5 @@
-import { assignment, staffOrShiftIds } from "@/schemas/assignment.js";
-import { validationHandler } from "@/utils/middleware.js";
+import { assignment, staffOrShiftIds } from "##/schemas/assignment";
+import { validationHandler } from "##/utils/middleware";
 
 export const assign = validationHandler((body) => staffOrShiftIds.parse(body));
 

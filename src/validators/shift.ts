@@ -1,5 +1,5 @@
-import { shift } from "@/schemas/shift.js";
-import { validationHandler } from "@/utils/middleware.js";
+import { shift } from "##/schemas/shift";
+import { validationHandler } from "##/utils/middleware";
 
 
 export const create = validationHandler((body) => shift.parse(body));

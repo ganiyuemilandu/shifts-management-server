@@ -1,10 +1,10 @@
 import type { Request, Response as EResponse } from "express";
 import { UniqueConstraintError } from "sequelize";
 
-import type { HTTPOkResponse, Pagination } from "@/@types/index.js";
-import Shift, { type ShiftAttributes } from "@/models/shift.js";
-import { querySchema } from "@/schemas/shift.js";
-import { HTTPError } from "@/utils/index.js";
+import type { HTTPOkResponse, Pagination } from "##/@types/index.js";
+import Shift, { type ShiftAttributes } from "##/models/shift";
+import { querySchema } from "##/schemas/shift";
+import { HTTPError } from "##/utils/index";
 import { Paginate } from "./index.js";
 
 

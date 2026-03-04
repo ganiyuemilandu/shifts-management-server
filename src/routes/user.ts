@@ -1,8 +1,8 @@
 import express from "express"
-import { logout } from "@/controllers/auth.js";
-import * as user from "@/controllers/user.js";
-import { adminAuthHandler, userAuthHandler } from "@/utils/middleware.js";
-import * as validator from "@/validators/user.js";
+import { logout } from "##/controllers/auth";
+import * as user from "##/controllers/user";
+import { adminAuthHandler, userAuthHandler } from "##/utils/middleware";
+import * as validator from "##/validators/user";
 
 const router = express.Router();
 

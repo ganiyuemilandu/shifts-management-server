@@ -1,11 +1,11 @@
 import type { NextFunction, Request, Response as EResponse } from "express";
 import { UniqueConstraintError } from "sequelize";
 
-import type { HTTPOkResponse, Pagination } from "@/@types/index.js";
-import { redisClient } from "@/databases/redis.js";
-import User, { type UserAttributes } from "@/models/user.js";
-import { querySchema } from "@/schemas/user.js";
-import { HTTPError } from "@/utils/index.js";
+import type { HTTPOkResponse, Pagination } from "##/@types/index.js";
+import { redisClient } from "##/databases/redis";
+import User, { type UserAttributes } from "##/models/user";
+import { querySchema } from "##/schemas/user";
+import { HTTPError } from "##/utils/index";
 import { Paginate } from "./index.js";
 
 

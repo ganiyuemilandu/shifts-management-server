@@ -1,9 +1,9 @@
 import { createServer } from "http";
-import * as mysql from "@/databases/mysql.js";
-import * as redis from "@/databases/redis.js";
-import { port } from "@/utils/config.js";
-import app from "@/app.js";
-import "@/models/index.js";
+import * as mysql from "##/databases/mysql";
+import * as redis from "##/databases/redis";
+import { port } from "##/utils/config";
+import app from "##/app";
+import "##/models/index";
 
 const server = createServer(app);
 const debug = console.log;

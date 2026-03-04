@@ -4,10 +4,10 @@ import { DataTypes, Model } from "sequelize";
 import type { BelongsToManyAddAssociationMixin, BelongsToManyAddAssociationsMixin, BelongsToManyGetAssociationsMixin, BelongsToManyRemoveAssociationMixin, BelongsToManyRemoveAssociationsMixin } from "sequelize";
 import type { CreationOptional, InferAttributes, InferCreationAttributes } from "sequelize";
 
-import { sequelize } from "@/databases/mysql.js";
-import { redisClient } from "@/databases/redis.js";
-import { type ProfileProps } from "@/schemas/user.js";
-import { HTTPError } from "@/utils/index.js";
+import { sequelize } from "##/databases/mysql";
+import { redisClient } from "##/databases/redis";
+import { type ProfileProps } from "##/schemas/user";
+import { HTTPError } from "##/utils/index";
 import type Shift from "./shift.js";
 
 

@@ -1,5 +1,5 @@
 import { type FindOptions, Op, type WhereOptions } from "sequelize";
-import type { Pagination } from "@/@types/index.js";
+import type { Pagination } from "##/@types/index.js";
 
 
 export const Paginate = async <T>(

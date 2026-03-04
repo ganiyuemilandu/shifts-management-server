@@ -9,9 +9,7 @@
 
     // For path aliases
     "paths": {
-      "@utils/*": ["utils/*"],
-      "@models/*": ["models/*"],
-      "@/*": ["*"]
+      "##/*": ["*"]
     },
 
     // Environment Settings

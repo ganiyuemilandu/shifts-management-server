@@ -1,5 +1,5 @@
 import { Resend } from "resend"; 
-import type { HTTPErrorResponse } from "@/@types/index.js";
+import type { HTTPErrorResponse } from "##/@types/index.js";
 
 
 type HTTPErrorCode = 400 | 401 | 403 | 404 | 500;

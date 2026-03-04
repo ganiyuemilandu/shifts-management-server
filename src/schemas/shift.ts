@@ -1,8 +1,8 @@
 import { Op, type OrderItem } from "sequelize";
 import { z } from "zod";
 
-import type { PaginationQuery } from "@/@types/index.js";
-import type { ShiftAttributes } from "@/models/shift.js";
+import type { PaginationQuery } from "##/@types/index.js";
+import type { ShiftAttributes } from "##/models/shift";
 
 export const shift = z.object({
 	title: z.string().trim().nonempty("Title is required"),

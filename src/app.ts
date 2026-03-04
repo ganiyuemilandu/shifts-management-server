@@ -3,15 +3,15 @@ import cors from "cors";
 import express from "express";
 import type { NextFunction, Request, Response } from "express";
 
-import authRouter from "@/routes/auth.js";
-import shiftAssignmentRouter from "@/routes/assignments/shift.js";
-import staffAssignmentRouter from "@/routes/assignments/staff.js";
-import shiftRouter from "@/routes/shift.js";
-import userRouter from "@/routes/user.js";
+import authRouter from "##/routes/auth";
+import shiftAssignmentRouter from "##/routes/assignments/shift";
+import staffAssignmentRouter from "##/routes/assignments/staff";
+import shiftRouter from "##/routes/shift";
+import userRouter from "##/routes/user";
 
-import { port } from "@/utils/config.js";
-import { HTTPError } from "@/utils/index.js";
-import type { HTTPErrorResponse } from "@/@types/index.js";
+import { port } from "##/utils/config";
+import { HTTPError } from "##/utils/index";
+import type { HTTPErrorResponse } from "##/@types/index.js";
 
 
 const app = express();

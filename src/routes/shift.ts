@@ -1,7 +1,7 @@
 import express from "express";
-import * as shift from "@/controllers/shift.js";
-import { adminAuthHandler } from "@/utils/middleware.js";
-import * as validator from "@/validators/shift.js";
+import * as shift from "##/controllers/shift";
+import { adminAuthHandler } from "##/utils/middleware";
+import * as validator from "##/validators/shift";
 
 const router = express.Router();
 

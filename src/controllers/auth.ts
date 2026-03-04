@@ -1,11 +1,11 @@
 import type { Request, Response as EResponse, CookieOptions } from "express";
 import { UniqueConstraintError } from "sequelize";
 
-import type { HTTPOkResponse } from "@/@types/index.js";
-import { redisClient } from "@/databases/redis.js";
-import User, { type UserAttributes } from "@/models/user.js";
-import { sendVerificationEmail } from "@/utils/email.js";
-import { HTTPError } from "@/utils/index.js";
+import type { HTTPOkResponse } from "##/@types/index.js";
+import { redisClient } from "##/databases/redis";
+import User, { type UserAttributes } from "##/models/user";
+import { sendVerificationEmail } from "##/utils/email";
+import { HTTPError } from "##/utils/index";
 
 
 type AuthResponse = {

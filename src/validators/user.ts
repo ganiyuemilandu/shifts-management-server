@@ -1,5 +1,5 @@
-import * as schema from "@/schemas/user.js";
-import { validationHandler } from "@/utils/middleware.js";
+import * as schema from "##/schemas/user";
+import { validationHandler } from "##/utils/middleware";
 
 
 export const register = validationHandler((body) => schema.profile.omit({ role: true }).parseAsync(body));

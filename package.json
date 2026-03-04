@@ -2,15 +2,18 @@
   "name": "shifts-manager-server",
   "version": "1.0.0",
   "description": "Manages staff job shifts",
-  "main": "index.js",
+  "main": "index",
   "type": "module",
+  "imports": {
+    "##/*": "./dist/*.js"
+  },
   "scripts": {
-    "start": "node ./dist/bin/launcher.js",
+    "start": "node ./dist/bin/launcher",
     "dev": "nodemon -e ts --watch 'src/**/*.ts' --exec node --import ./ts-node-bootstrap.js src/bin/launcher.ts",
     "cli:reg": "node --import ./ts-node-bootstrap.js src/cli.ts register",
     "cli:auth": "node --import ./ts-node-bootstrap.js src/cli.ts authenticate",
     "cli:del": "node --import ./ts-node-bootstrap.js src/cli.ts delete",
-    "build": "tsc && tsc-alias",
+    "build": "tsc",
     "test": "jest"
   },
   "repository": {
@@ -43,7 +46,6 @@
     "redis": "^5.10.0",
     "resend": "^6.9.3",
     "sequelize": "^6.37.7",
-    "tsc-alias": "^1.8.16",
     "typescript": "^5.9.3",
     "yaml": "^2.8.1",
     "zod": "^4.1.12",

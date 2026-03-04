@@ -1,8 +1,8 @@
 import type { NextFunction, Request, Response } from "express";
 import { ZodError } from "zod";
 
-import type { HTTPErrorResponse } from "@/@types/index.js";
-import User from "@/models/user.js";
+import type { HTTPErrorResponse } from "##/@types/index.js";
+import User from "##/models/user";
 import { HTTPError } from "./index.js";
 
 

@@ -1,7 +1,7 @@
 import { DataTypes, Model } from "sequelize";
 import type { CreationOptional, InferAttributes, InferCreationAttributes } from "sequelize";
-import { sequelize } from "@/databases/mysql.js";
-import type { AssignmentProps } from "@/schemas/assignment.js";
+import { sequelize } from "##/databases/mysql";
+import type { AssignmentProps } from "##/schemas/assignment";
 
 
 class Assignment extends Model<InferAttributes<Assignment>, InferCreationAttributes<Assignment>> implements AssignmentProps {

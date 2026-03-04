@@ -2,8 +2,8 @@ import { DataTypes, Model } from "sequelize";
 import type { BelongsToManyAddAssociationMixin, BelongsToManyAddAssociationsMixin, BelongsToManyGetAssociationsMixin, BelongsToManyRemoveAssociationMixin, BelongsToManyRemoveAssociationsMixin } from "sequelize";
 import type { CreationOptional, InferAttributes, InferCreationAttributes } from "sequelize";
 
-import { type ShiftProps } from "@/schemas/shift.js";
-import { sequelize } from "@/databases/mysql.js";
+import { type ShiftProps } from "##/schemas/shift";
+import { sequelize } from "##/databases/mysql";
 import type Staff from "./user.js";
 
 

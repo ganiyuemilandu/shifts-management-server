@@ -1,8 +1,8 @@
 import crypto from "crypto";
 import jwt from "jsonwebtoken";
 
-	import Verification from "@/emails/verification.js";
-import type { UserAttributes } from "@/models/user.js";
+import Verification from "##/emails/verification";
+import type { UserAttributes } from "##/models/user";
 import { sendEmail } from "./index.js";
 
 

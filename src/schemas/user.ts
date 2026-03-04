@@ -1,7 +1,7 @@
 import type { OrderItem } from "sequelize";
 import { z } from "zod";
-import type { PaginationQuery } from "@/@types/index.js";
-import type { UserAttributes } from "@/models/user.js";
+import type { PaginationQuery } from "##/@types/index.js";
+import type { UserAttributes } from "##/models/user";
 
 export const profile = z.object({
 	firstName: z.string().trim().nonempty("First name is required").regex(/^[A-Za-z]+$/, "First name must contain only letters"),

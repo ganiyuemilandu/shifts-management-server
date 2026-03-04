@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 import "dotenv/config";
-import { port } from "@/utils/config.js";
-import server from "@/server.js";
+import { port } from "##/utils/config";
+import server from "##/server";
 
 
 // Listen for termination signals to gracefully shut down the server
